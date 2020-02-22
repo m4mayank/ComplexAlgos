@@ -40,8 +40,6 @@ def merge_sort(arr):
         mid = len(arr)//2
         first_half = [arr[i] for i in range(0,mid)]
         second_half = [arr[i] for i in range(mid, len(arr))]
-        #print(first_half)
-        #print(second_half)
         first_sorted = merge_sort(first_half)
         second_sorted = merge_sort(second_half)
         srted_list = comp_merge(first_sorted, second_sorted)
