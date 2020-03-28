@@ -1,5 +1,10 @@
 #!/usr/local/bin/python3.7
 import time
+
+#If the vector has [1, 2, 3]
+#the returned vector should be [1, 2, 4]
+#as 123 + 1 = 124.
+
 def plusOne(A):
     val = 1
     for i in range(len(A),0,-1):
