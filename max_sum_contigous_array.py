@@ -33,6 +33,7 @@ def maxSubArray(A):
 
 
 #A = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-A = [ -3 , -4, 1, -2, 0]
+#A = [ -3 , -4, 1, -2, 0]
+A = [1, 2, 5, -7, 2, 3]
 maximum_val = maxSubArray(A)
 print(maximum_val)
