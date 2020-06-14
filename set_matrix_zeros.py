@@ -1,5 +1,30 @@
 #!/usr/local/bin/python3.7
 
+
+#Given a matrix, A of size M x N of 0s and 1s. If an element is 0, set its entire row and column to 0.
+#
+#Note: This will be evaluated on the extra memory used. Try to minimize the space and time complexity.
+#
+#Input 1:
+#        [[1, 0, 1],
+#         [1, 1, 1],
+#         [1, 1, 1]]
+#
+#Output 1:
+#       [[0, 0, 0],
+#        [1, 0, 1],
+#        [1, 0, 1]]
+#
+#Input 2:
+#       [[1, 0, 1],
+#        [1, 1, 1],
+#        [1, 0, 1]]
+#
+#Output 2:
+#       [[0, 0, 0],
+#        [1, 0, 1],
+#        [0, 0, 0]]
+
 def setZeroes(A):
     numRows = len(A)
     numColumns = len(A[0])
