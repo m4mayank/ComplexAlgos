@@ -1,10 +1,5 @@
 #!/usr/local/bin/python3.7
 
-#Example:
-#    if N = 7,
-#    all primes till 7 = {2, 3, 5, 7}
-#    Make sure the returned array is sorted.
-
 def sieve(A):
     if A==1:
         return []
@@ -20,5 +15,11 @@ def sieve(A):
                     j+=1
         return [i for i in range(0, len(primes)) if primes[i]==1]
 
-print(sieve(10))
 
+def primesum(A):
+    llist = sieve(A)
+    for i in range(len(llist)-1, -1, -1):
+        if (A-llist[i]) in llist:
+            return[A-llist[i], llist[i]]
+
+print(primesum(16777214))
