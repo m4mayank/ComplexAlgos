@@ -22,5 +22,5 @@ def allFactors(A):
 
 
 
-llist = allFactors(100)
+llist = allFactors(131)
 print(llist)

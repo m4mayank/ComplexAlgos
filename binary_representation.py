@@ -15,4 +15,4 @@ def findDigitsInBinary(A):
         A = (A//2)
     return stri
 
-print(findDigitsInBinary(100))
+print(findDigitsInBinary(536870912))
