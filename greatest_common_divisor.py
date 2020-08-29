@@ -14,27 +14,34 @@
 
 import bisect
 
+#def gcd(A, B):
+#    llist = []
+#    smaller = min(A,B)
+#    larger = max(A,B)
+#    if smaller == 0:
+#        return larger
+#    if A == 1 or B == 1:
+#        return 1
+#    else:
+#        for i in range(1,int((smaller)**(0.5))+1):
+#            if smaller%i == 0:
+#                if larger%i == 0:
+#                    bisect.insort(llist, i)
+#                if i != (smaller)**(0.5):
+#                    j = smaller//i
+#                    if larger%j == 0:
+#                        bisect.insort(llist, j)
+#    print(llist)
+#    return llist[-1]
+
+
+#****Most Optimised Solution****
+#Came across this solution while i was solving another problem
 def gcd(A, B):
-    llist = []
-    smaller = min(A,B)
-    larger = max(A,B)
-    if smaller == 0:
-        return larger
-    if A == 1 or B == 1:
-        return 1
-    else:
-        for i in range(1,int((smaller)**(0.5))+1):
-            if smaller%i == 0:
-                if larger%i == 0:
-                    bisect.insort(llist, i)
-                if i != (smaller)**(0.5):
-                    j = smaller//i
-                    if larger%j == 0:
-                        bisect.insort(llist, j)
-    print(llist)
-    return llist[-1]
+    while (B!=0):
+        A, B = B, A%B
 
-
+    return A
 
 llist = gcd(2, 0)
 print(llist)
