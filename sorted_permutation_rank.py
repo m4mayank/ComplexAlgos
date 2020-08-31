@@ -30,7 +30,7 @@ def findRank(A):
         before_this = [llist[x] for x in range(0,llist.index(A[i])) if llist[x] not in already_used]
         already_used.append(A[i])
         permutations = permutations + (len(before_this) * per_alpha)
-
+    print (permutations)
     return (permutations+1)%1000003
 
-print(findRank("aAbBcC"))
+print(findRank("abcABC"))
