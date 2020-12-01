@@ -1,4 +1,8 @@
 #!/home/cloud_user/.local/share/virtualenvs/algo-9u7x6JDZ/bin/python3
+#Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
+#
+#The first call to next() will return the smallest number in BST. Calling next() again will return the next smallest number in the BST, and so on.
+#next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
 class Node:
     def __init__(self, data):
         self.left = None
